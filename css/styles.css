@@ -27,6 +27,9 @@ p {
 
 .link {
   text-decoration: none;
+  transition-property: color, border-color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 img {
@@ -484,6 +487,10 @@ body {
   cursor: pointer;
 
   padding: 6px 22px;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-btn:hover,
@@ -501,6 +508,10 @@ body {
 
 .portfolio-item-link {
   display: block;
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item-link:hover,
