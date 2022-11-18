@@ -261,6 +261,27 @@ body {
   margin-bottom: 50px;
 }
 
+.work-item {
+  position: relative;
+}
+
+.work-subtitle-wrap {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 27px 0px;
+  background-color: rgba(47, 48, 58, 0.8);
+  text-align: center;
+}
+
+.work-subtitle {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--first-bg-color);
+}
+
 .work-list {
   display: flex;
   flex-wrap: wrap;
