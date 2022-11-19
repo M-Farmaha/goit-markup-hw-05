@@ -539,15 +539,13 @@ body {
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   overflow: auto;
 }
 
 .portfolio-item-link:hover .portfolio-item-hover-text,
 .portfolio-item-link:focus .portfolio-item-hover-text {
   transform: translateY(0%);
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item-link:hover,
