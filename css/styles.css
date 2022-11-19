@@ -172,7 +172,7 @@ body {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
 
   text-align: center;
   padding: 200px 0px;
@@ -275,21 +275,19 @@ body {
   position: relative;
 }
 
-.work-subtitle-wrap {
+.work-subtitle {
   position: absolute;
   bottom: 0;
   width: 100%;
   padding: 27px 0px;
   background-color: rgba(47, 48, 58, 0.8);
+  color: var(--first-bg-color);
   text-align: center;
-}
 
-.work-subtitle {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--first-bg-color);
 }
 
 .work-list {
@@ -542,8 +540,6 @@ body {
   transition-property: transform;
   transition-duration: var(--main-transition-duration);
   transition-timing-function: var(--main-transition-timing-function);
-
-  overflow: auto;
 }
 
 .portfolio-item-link:hover .portfolio-item-hover-text,
