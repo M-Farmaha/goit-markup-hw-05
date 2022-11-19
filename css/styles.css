@@ -36,6 +36,10 @@ img {
   display: block;
 }
 
+button {
+  cursor: pointer;
+}
+
 /* ----------------GENERAL------------------ */
 body {
   background-color: var(--first-bg-color);
@@ -570,4 +574,67 @@ body {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--first-text-color);
+}
+
+/* --------------------MODAL-------------------- */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba(0, 0, 0, 0.2);
+
+  transition-property: opacity, visibility;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-window {
+  width: 528px;
+  min-height: 581px;
+  background-color: var(--first-bg-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden .modal-window {
+  transform: translate(-150%, -50%);
+}
+
+.modal-window-close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--first-bg-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-window-close-icon {
+  fill: #000000;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
